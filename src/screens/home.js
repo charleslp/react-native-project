@@ -3,19 +3,16 @@ import {View, Text, Button} from 'react-native';
 import {connect} from 'react-redux';
 import {setAllInfo} from '../store/actions';
 import TabBar from '../container/tabBar/index';
+import systemUrl from '../path';
 class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   componentDidMount() {
-    const infos = {
-      user_id: '3402033689',
-      user_level: 4,
-      user_name: 'abc',
-      user_account: 'andrewli',
-    };
-    this.getInfo(infos);
+    this.getInfo();
+    console.log(systemUrl.url, '环境变量');
+    console.log(process, '环境变量');
   }
   getInfo() {
     const {fetchUserInfo} = this.props;

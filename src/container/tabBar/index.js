@@ -51,28 +51,30 @@ export default withNavigation(TabBar);
 
 const styles = StyleSheet.create({
   container: {
-    display: 'flex',
-    flex: 1,
     flexDirection: 'row',
     // justifyContent: 'space-between',
     alignContent: 'space-between',
     alignItems: 'center',
     backgroundColor: 'orange',
     position: 'absolute',
-    width: 500,
+    width: '100%',
     height: 80,
-    left: '50%',
-    marginLeft: -250,
+    // left: '50%',
+    // marginLeft: -250,
     bottom: 30,
   },
   textBox: {
+    // display: 'block',
     flex: 1,
-    width: 160,
-    height: 60,
+    // width: 160,
+    // height: 60,
     textAlign: 'center',
     lineHeight: 60,
     color: 'red',
     fontSize: 20,
     backgroundColor: 'yellow',
+  },
+  textSpe: {
+    flex: 2,
   },
 });
